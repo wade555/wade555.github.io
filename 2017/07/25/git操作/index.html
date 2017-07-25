@@ -4,22 +4,59 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>前端小知识</title>
+    <title>git操作 | 前端小知识</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="小韦德">
     
 
     
-    <meta name="description" content="分享自己的收获">
-<meta property="og:type" content="website">
-<meta property="og:title" content="前端小知识">
-<meta property="og:url" content="https://wade555.github.io/index.html">
+    <meta name="description" content="##几个常用的git操作命令
+
+比较容易且经常用到的操作
+
+git add. 添加所有更改到本地
+git commit -m &amp;apos;&amp;apos;  给此次添加的代码一个描述
+git status 查看一下当前本地git的状态，添加删除更改都可以看到
+git push origin master  把本地代码提交到远程分支 
+
+合并代码
+
+git merge
+假设我本地跟远程各有一个代码库，且">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git操作">
+<meta property="og:url" content="https://wade555.github.io/2017/07/25/git操作/index.html">
 <meta property="og:site_name" content="前端小知识">
-<meta property="og:description" content="分享自己的收获">
+<meta property="og:description" content="##几个常用的git操作命令
+
+比较容易且经常用到的操作
+
+git add. 添加所有更改到本地
+git commit -m &amp;apos;&amp;apos;  给此次添加的代码一个描述
+git status 查看一下当前本地git的状态，添加删除更改都可以看到
+git push origin master  把本地代码提交到远程分支 
+
+合并代码
+
+git merge
+假设我本地跟远程各有一个代码库，且">
+<meta property="og:updated_time" content="2017-07-25T09:59:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端小知识">
-<meta name="twitter:description" content="分享自己的收获">
+<meta name="twitter:title" content="git操作">
+<meta name="twitter:description" content="##几个常用的git操作命令
+
+比较容易且经常用到的操作
+
+git add. 添加所有更改到本地
+git commit -m &amp;apos;&amp;apos;  给此次添加的代码一个描述
+git status 查看一下当前本地git的状态，添加删除更改都可以看到
+git push origin master  把本地代码提交到远程分支 
+
+合并代码
+
+git merge
+假设我本地跟远程各有一个代码库，且">
 
     
     <link rel="alternative" href="/atom.xml" title="前端小知识" type="application/atom+xml">
@@ -73,12 +110,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2017/07/25/git操作/" title="git操作" itemprop="url">git操作</a>
@@ -92,9 +127,16 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <p>##几个常用的git操作命令</p>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>##几个常用的git操作命令</p>
 <blockquote>
 <p>比较容易且经常用到的操作</p>
 <hr>
@@ -124,14 +166,9 @@ git push origin :master  删除远程master分支
 git push origin master  把回滚后的代码推到远程master分支
 </code></pre><hr>
 </blockquote>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 
@@ -139,111 +176,43 @@ git push origin master  把回滚后的代码推到远程master分支
 
 
 
-
-<div class="comments-count">
+	<div class="article-share" id="share">
 	
-</div>
+	  <div data-url="https://wade555.github.io/2017/07/25/git操作/" data-title="git操作 | 前端小知识" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/07/13/console的几种用法/" title="console的几种用法" itemprop="url">console的几种用法</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="小韦德" target="_blank" itemprop="author">小韦德</a>
-		
-  <p class="article-time">
-    <time datetime="2017-07-13T06:09:01.000Z" itemprop="datePublished"> Published 2017-07-13</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>##console之数字</p>
-<hr>
-<pre><code>输入： console.log(&quot;parse&quot;: %d, floating: %f, 1, 1.5);
-输出： parse: 1, floating: 1.500000
-</code></pre><hr>
-<blockquote>
-<p>%i &amp;&amp; %d 代表整数，%f代表浮点数</p>
-<p>##console之自定义</p>
-<hr>
-<pre><code>const success = [
-    &quot;background&quot;: &quot;green&quot;,
-    &quot;color&quot;: &quot;#fff&quot;,
-    &quot;display&quot;: &quot;block&quot;,
-    &quot;text-align&quot;: &quot;center&quot;
-].join(&quot;;&quot;);
-console.info(&quot;this is success&quot;, success);
-</code></pre><hr>
-<p>这样自定义了一种success样式，打印出来就是对应的样式。</p>
-<p>##console之断言</p>
-<hr>
-<pre><code>let flag = false;
-console.assert(flag, &quot;显示&quot;);
-flag = true;
-console.assert(flag, &quot;不显示&quot;);
-</code></pre><hr>
-<p>assert()：第一个参数为布尔值，入为false则输出到控制台，同时提示红色错误信息；为true则不显示</p>
-<p>##console之检查对象</p>
-<hr>
-<pre><code>console.dir(document.body);
-输出： body对象的所有属性
-</code></pre><hr>
-<p>如果需要检查一个对象，用dir这种结构化方式显示的话可以简洁。</p>
-<p>##console之表格</p>
-<hr>
-<pre><code>console.table（[&apos;Javascript&apos;，&apos;PHP&apos;，&apos;Perl&apos;，&apos;C ++&apos;]）;
-输出一个table布局的列表
-</code></pre><hr>
-</blockquote>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
+   	       
+	</article>
 	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2017/07/13/console的几种用法/"  title="console的几种用法">
+ <strong>下一篇：</strong><br/> 
+ <span>console的几种用法
+</span>
+</a>
 </div>
 
-</footer>
+</nav>
 
+	
 
-    </article>
-
-
-
-
-
-
-
-</div>
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
@@ -374,12 +343,89 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
 
 
 
@@ -450,4 +496,4 @@ var _hmt = _hmt || [];
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>

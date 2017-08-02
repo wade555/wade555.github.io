@@ -4,50 +4,47 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>git操作 | 前端小知识</title>
+    <title>vue初体验(一) | 前端小知识</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="小韦德">
     
 
     
-    <meta name="description" content="##几个常用的git操作命令
+    <meta name="description" content="##快速的搭建一个脚手架
 
-比较容易且经常用到的操作
+根据vue官方文档，只需在命令行 npm init webpack &amp;apos;项目名&amp;apos; 即可，里面配置信息都已配置好
 
-git add. 添加所有更改到本地
-git commit -m &amp;apos;&amp;apos;  给此次添加的代码一个描述
-git status 查看一下当前本地git的状态，添加删除更改都可以看到
-git push origin master  把本地代码提交到远程分支 
-git pull  拉取代码
-git checkout -b new">
+##安装所需依赖
+
+在根目录package.json文件下，dependencies对象写输入所需的依赖及版本号，npm install即可安装依赖；或者在命令行npm install 依赖 --save也可安装所需依赖
+
+##项目结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git操作">
-<meta property="og:url" content="https://wade555.github.io/2017/07/25/git操作/index.html">
+<meta property="og:title" content="vue初体验(一)">
+<meta property="og:url" content="https://wade555.github.io/2017/08/02/vue初体验-一/index.html">
 <meta property="og:site_name" content="前端小知识">
-<meta property="og:description" content="##几个常用的git操作命令
+<meta property="og:description" content="##快速的搭建一个脚手架
 
-比较容易且经常用到的操作
+根据vue官方文档，只需在命令行 npm init webpack &amp;apos;项目名&amp;apos; 即可，里面配置信息都已配置好
 
-git add. 添加所有更改到本地
-git commit -m &amp;apos;&amp;apos;  给此次添加的代码一个描述
-git status 查看一下当前本地git的状态，添加删除更改都可以看到
-git push origin master  把本地代码提交到远程分支 
-git pull  拉取代码
-git checkout -b new">
-<meta property="og:updated_time" content="2017-07-25T10:07:28.000Z">
+##安装所需依赖
+
+在根目录package.json文件下，dependencies对象写输入所需的依赖及版本号，npm install即可安装依赖；或者在命令行npm install 依赖 --save也可安装所需依赖
+
+##项目结构">
+<meta property="og:updated_time" content="2017-08-02T09:45:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git操作">
-<meta name="twitter:description" content="##几个常用的git操作命令
+<meta name="twitter:title" content="vue初体验(一)">
+<meta name="twitter:description" content="##快速的搭建一个脚手架
 
-比较容易且经常用到的操作
+根据vue官方文档，只需在命令行 npm init webpack &amp;apos;项目名&amp;apos; 即可，里面配置信息都已配置好
 
-git add. 添加所有更改到本地
-git commit -m &amp;apos;&amp;apos;  给此次添加的代码一个描述
-git status 查看一下当前本地git的状态，添加删除更改都可以看到
-git push origin master  把本地代码提交到远程分支 
-git pull  拉取代码
-git checkout -b new">
+##安装所需依赖
+
+在根目录package.json文件下，dependencies对象写输入所需的依赖及版本号，npm install即可安装依赖；或者在命令行npm install 依赖 --save也可安装所需依赖
+
+##项目结构">
 
     
     <link rel="alternative" href="/atom.xml" title="前端小知识" type="application/atom+xml">
@@ -107,14 +104,14 @@ git checkout -b new">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/07/25/git操作/" title="git操作" itemprop="url">git操作</a>
+      <a href="/2017/08/02/vue初体验-一/" title="vue初体验(一)" itemprop="url">vue初体验(一)</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小韦德" target="_blank" itemprop="author">小韦德</a>
 		
   <p class="article-time">
-    <time datetime="2017-07-25T09:33:50.000Z" itemprop="datePublished"> Published 2017-07-25</time>
+    <time datetime="2017-08-02T09:20:42.000Z" itemprop="datePublished"> Published 2017-08-02</time>
     
   </p>
 </header>
@@ -127,38 +124,23 @@ git checkout -b new">
 		
 		</div>
 		
-		<p>##几个常用的git操作命令</p>
-<blockquote>
-<p>比较容易且经常用到的操作</p>
+		<p>##快速的搭建一个脚手架</p>
 <hr>
-<pre><code>git add. 添加所有更改到本地
-git commit -m &apos;&apos;  给此次添加的代码一个描述
-git status 查看一下当前本地git的状态，添加删除更改都可以看到
-git push origin master  把本地代码提交到远程分支 
-git pull  拉取代码
-git checkout -b new-master  新建一个new-master本地分支
+<pre><code>根据vue官方文档，只需在命令行 npm init webpack &apos;项目名&apos; 即可，里面配置信息都已配置好
 </code></pre><hr>
-<p>合并代码</p>
+<p>##安装所需依赖</p>
 <hr>
-<pre><code>git merge
-假设我本地跟远程各有一个代码库，且都有两个分支：master和dev分支，master跟dev一一对应。如果我在dev更改了许多内容并且提交到了服务器，现在也想在master加上同样的内容，就可以用到：
-git checkout master  切换到master分支
-git merge dev 合并
+<pre><code>在根目录package.json文件下，dependencies对象写输入所需的依赖及版本号，npm install即可安装依赖；或者在命令行npm install 依赖 --save也可安装所需依赖
 </code></pre><hr>
-<p>代码回滚</p>
+<p>##项目结构</p>
 <hr>
-<pre><code>git reset --hard commit-id  回滚到commit-id，commit-id之后的提交都会删除
-git reset --hard HEAD~5  删除最近5次的提交
-git-log  可以打印出最近的操作，找到commit-id
+<pre><code>所有的页面都卸载src目录下，所以我们主要工作的地方就是在src目录下面；build，config目录为打包跟配置信息，一般我们不会更改,node_modules为安装的依赖。
 </code></pre><hr>
-<p>远程代码回滚</p>
+<p>##页面间相互调用</p>
 <hr>
-<pre><code>如果线上发现bug，需要回滚到上个版本，更改后再重新发布，可以先在本地回滚到上一个版本，回滚如上，删除远程分支，重新push本地代码
-git reset --hard commit-id  本地回滚到commit-id
-git push origin :master  删除远程master分支
-git push origin master  把回滚后的代码推到远程master分支
+<pre><code>在src目录下写我们的组件，A调用B，我们可以在B中 export 或者 export default，当然两种的写法在A中也是不一样的调用写法,export 调用为 import {名} from B，export default调用为 import 名 from B
+这样，我们可以在build下的webpack.base.conf.js下面配置信息，resolve对象下的aias配置，以此来简化调用来源
 </code></pre><hr>
-</blockquote>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -171,7 +153,7 @@ git push origin master  把回滚后的代码推到远程master分支
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="https://wade555.github.io/2017/07/25/git操作/" data-title="git操作 | 前端小知识" data-tsina="null" class="share clearfix">
+	  <div data-url="https://wade555.github.io/2017/08/02/vue初体验-一/" data-title="vue初体验(一) | 前端小知识" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -184,19 +166,11 @@ git push origin master  把回滚后的代码推到远程master分支
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/08/02/vue初体验-一/" title="vue初体验(一)">
-  <strong>上一篇：</strong><br/>
-  <span>
-  vue初体验(一)</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2017/07/13/console的几种用法/"  title="console的几种用法">
+<a href="/2017/07/25/git操作/"  title="git操作">
  <strong>下一篇：</strong><br/> 
- <span>console的几种用法
+ <span>git操作
 </span>
 </a>
 </div>

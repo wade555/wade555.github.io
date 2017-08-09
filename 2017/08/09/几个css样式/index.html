@@ -4,47 +4,29 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>vue初体验(一) | 前端小知识</title>
+    <title>几个css样式 | 前端小知识</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="小韦德">
     
 
     
-    <meta name="description" content="##快速的搭建一个脚手架
+    <meta name="description" content="##box-sizing
 
-根据vue官方文档，只需在命令行 npm init webpack &amp;apos;项目名&amp;apos; 即可，里面配置信息都已配置好
-
-##安装所需依赖
-
-在根目录package.json文件下，dependencies对象写输入所需的依赖及版本号，npm install即可安装依赖；或者在命令行npm install 依赖 --save也可安装所需依赖
-
-##项目结构">
+由于各种浏览器有各自的盒模型，有自己的标准，所以如果设置margin,padding他们所加在的位置也会不同，这样看到的宽高可能就会不一样了。这样我们有box-sizing这个属性可以设置，它有两个值content-box和border-box，如果box-sizing: content-box，那么元素设置宽高后，加padding,margin，还是会按照浏览器标准的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue初体验(一)">
-<meta property="og:url" content="https://wade555.github.io/2017/08/02/vue初体验-一/index.html">
+<meta property="og:title" content="几个css样式">
+<meta property="og:url" content="https://wade555.github.io/2017/08/09/几个css样式/index.html">
 <meta property="og:site_name" content="前端小知识">
-<meta property="og:description" content="##快速的搭建一个脚手架
+<meta property="og:description" content="##box-sizing
 
-根据vue官方文档，只需在命令行 npm init webpack &amp;apos;项目名&amp;apos; 即可，里面配置信息都已配置好
-
-##安装所需依赖
-
-在根目录package.json文件下，dependencies对象写输入所需的依赖及版本号，npm install即可安装依赖；或者在命令行npm install 依赖 --save也可安装所需依赖
-
-##项目结构">
-<meta property="og:updated_time" content="2017-08-02T09:45:56.000Z">
+由于各种浏览器有各自的盒模型，有自己的标准，所以如果设置margin,padding他们所加在的位置也会不同，这样看到的宽高可能就会不一样了。这样我们有box-sizing这个属性可以设置，它有两个值content-box和border-box，如果box-sizing: content-box，那么元素设置宽高后，加padding,margin，还是会按照浏览器标准的">
+<meta property="og:updated_time" content="2017-08-09T09:12:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue初体验(一)">
-<meta name="twitter:description" content="##快速的搭建一个脚手架
+<meta name="twitter:title" content="几个css样式">
+<meta name="twitter:description" content="##box-sizing
 
-根据vue官方文档，只需在命令行 npm init webpack &amp;apos;项目名&amp;apos; 即可，里面配置信息都已配置好
-
-##安装所需依赖
-
-在根目录package.json文件下，dependencies对象写输入所需的依赖及版本号，npm install即可安装依赖；或者在命令行npm install 依赖 --save也可安装所需依赖
-
-##项目结构">
+由于各种浏览器有各自的盒模型，有自己的标准，所以如果设置margin,padding他们所加在的位置也会不同，这样看到的宽高可能就会不一样了。这样我们有box-sizing这个属性可以设置，它有两个值content-box和border-box，如果box-sizing: content-box，那么元素设置宽高后，加padding,margin，还是会按照浏览器标准的">
 
     
     <link rel="alternative" href="/atom.xml" title="前端小知识" type="application/atom+xml">
@@ -104,14 +86,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/08/02/vue初体验-一/" title="vue初体验(一)" itemprop="url">vue初体验(一)</a>
+      <a href="/2017/08/09/几个css样式/" title="几个css样式" itemprop="url">几个css样式</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小韦德" target="_blank" itemprop="author">小韦德</a>
 		
   <p class="article-time">
-    <time datetime="2017-08-02T09:20:42.000Z" itemprop="datePublished"> Published 2017-08-02</time>
+    <time datetime="2017-08-09T08:39:43.000Z" itemprop="datePublished"> Published 2017-08-09</time>
     
   </p>
 </header>
@@ -124,22 +106,18 @@
 		
 		</div>
 		
-		<p>##快速的搭建一个脚手架</p>
+		<p>##box-sizing</p>
 <hr>
-<pre><code>根据vue官方文档，只需在命令行 npm init webpack &apos;项目名&apos; 即可，里面配置信息都已配置好
+<pre><code>由于各种浏览器有各自的盒模型，有自己的标准，所以如果设置margin,padding他们所加在的位置也会不同，这样看到的宽高可能就会不一样了。这样我们有box-sizing这个属性可以设置，它有两个值content-box和border-box，如果box-sizing: content-box，那么元素设置宽高后，加padding,margin，还是会按照浏览器标准的不同而解析；设置box-sizing: border-box 元素宽高在各种浏览器则会一致，不会因padding,border而改变。
+一些专家甚至建议所有的WEB开发者：将所有的元素的box-sizing都设为border-box 
 </code></pre><hr>
-<p>##安装所需依赖</p>
+<p>##flex</p>
 <hr>
-<pre><code>在根目录package.json文件下，dependencies对象写输入所需的依赖及版本号，npm install即可安装依赖；或者在命令行npm install 依赖 --save也可安装所需依赖
-</code></pre><hr>
-<p>##项目结构</p>
-<hr>
-<pre><code>所有的页面都卸载src目录下，所以我们主要工作的地方就是在src目录下面；build，config目录为打包跟配置信息，一般我们不会更改,node_modules为安装的依赖。
-</code></pre><hr>
-<p>##页面间相互调用</p>
-<hr>
-<pre><code>在src目录下写我们的组件，A调用B，我们可以在B中 export 或者 export default，当然两种的写法在A中也是不一样的调用写法,export 调用为 import {名} from B，export default调用为 import 名 from B
-这样，我们可以在build下的webpack.base.conf.js下面配置信息，resolve对象下的aias配置，以此来简化调用来源
+<pre><code>如果不知道元素高度，那么垂直居中就不容易实现，所以我们可以display: flex，然后设置align-items: center就可以了，其他几个属性：
+flex-direction: row|row-reverse|column|column-reverse 设置元素的排列顺序
+flex-wrap: nowrap|wrap|wrap-reverse  设置一行排不下如何换行
+justify-content: flex-start|flex-end|center|space-between|space-around  x轴的对齐方式
+align-items: flex-start|flex-end|center|baseline|stretch  y轴的对齐方式
 </code></pre><hr>
   
 	</div>
@@ -153,7 +131,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="https://wade555.github.io/2017/08/02/vue初体验-一/" data-title="vue初体验(一) | 前端小知识" data-tsina="null" class="share clearfix">
+	  <div data-url="https://wade555.github.io/2017/08/09/几个css样式/" data-title="几个css样式 | 前端小知识" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -166,19 +144,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/08/09/几个css样式/" title="几个css样式">
-  <strong>上一篇：</strong><br/>
-  <span>
-  几个css样式</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2017/07/25/git操作/"  title="git操作">
+<a href="/2017/08/02/vue初体验-一/"  title="vue初体验(一)">
  <strong>下一篇：</strong><br/> 
- <span>git操作
+ <span>vue初体验(一)
 </span>
 </a>
 </div>

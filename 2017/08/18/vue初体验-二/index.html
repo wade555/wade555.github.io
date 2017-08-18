@@ -4,29 +4,47 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>几个css样式 | 前端小知识</title>
+    <title>vue初体验(二) | 前端小知识</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="小韦德">
     
 
     
-    <meta name="description" content="##box-sizing
+    <meta name="description" content="##vue-router
 
-由于各种浏览器有各自的盒模型，有自己的标准，所以如果设置margin,padding他们所加在的位置也会不同，这样看到的宽高可能就会不一样了。这样我们有box-sizing这个属性可以设置，它有两个值content-box和border-box，如果box-sizing: content-box，那么元素设置宽高后，加padding,margin，还是会按照浏览器标准的">
+通过修改我们搭建的脚手架下的router&amp;gt;index.js，实现配置路由。
+1.首先我们需要import vue跟vue-router，引入我们所需路由的模块，然后在router里面配置，子路由的话则配置一个children即可，如下
+
+
+
+2.实现一个tab切换，创建一个tab模块，可以使用&amp;lt;router-link&amp;gt;标签，它默认为一个a标签，里面有一">
 <meta property="og:type" content="article">
-<meta property="og:title" content="几个css样式">
-<meta property="og:url" content="https://wade555.github.io/2017/08/09/几个css样式/index.html">
+<meta property="og:title" content="vue初体验(二)">
+<meta property="og:url" content="https://wade555.github.io/2017/08/18/vue初体验-二/index.html">
 <meta property="og:site_name" content="前端小知识">
-<meta property="og:description" content="##box-sizing
+<meta property="og:description" content="##vue-router
 
-由于各种浏览器有各自的盒模型，有自己的标准，所以如果设置margin,padding他们所加在的位置也会不同，这样看到的宽高可能就会不一样了。这样我们有box-sizing这个属性可以设置，它有两个值content-box和border-box，如果box-sizing: content-box，那么元素设置宽高后，加padding,margin，还是会按照浏览器标准的">
-<meta property="og:updated_time" content="2017-08-09T09:12:20.000Z">
+通过修改我们搭建的脚手架下的router&amp;gt;index.js，实现配置路由。
+1.首先我们需要import vue跟vue-router，引入我们所需路由的模块，然后在router里面配置，子路由的话则配置一个children即可，如下
+
+
+
+2.实现一个tab切换，创建一个tab模块，可以使用&amp;lt;router-link&amp;gt;标签，它默认为一个a标签，里面有一">
+<meta property="og:image" content="https://wade555.github.io/img/router.png">
+<meta property="og:image" content="https://wade555.github.io/img/mine.png">
+<meta property="og:updated_time" content="2017-08-18T07:49:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="几个css样式">
-<meta name="twitter:description" content="##box-sizing
+<meta name="twitter:title" content="vue初体验(二)">
+<meta name="twitter:description" content="##vue-router
 
-由于各种浏览器有各自的盒模型，有自己的标准，所以如果设置margin,padding他们所加在的位置也会不同，这样看到的宽高可能就会不一样了。这样我们有box-sizing这个属性可以设置，它有两个值content-box和border-box，如果box-sizing: content-box，那么元素设置宽高后，加padding,margin，还是会按照浏览器标准的">
+通过修改我们搭建的脚手架下的router&amp;gt;index.js，实现配置路由。
+1.首先我们需要import vue跟vue-router，引入我们所需路由的模块，然后在router里面配置，子路由的话则配置一个children即可，如下
+
+
+
+2.实现一个tab切换，创建一个tab模块，可以使用&amp;lt;router-link&amp;gt;标签，它默认为一个a标签，里面有一">
+<meta name="twitter:image" content="https://wade555.github.io/img/router.png">
 
     
     <link rel="alternative" href="/atom.xml" title="前端小知识" type="application/atom+xml">
@@ -86,14 +104,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/08/09/几个css样式/" title="几个css样式" itemprop="url">几个css样式</a>
+      <a href="/2017/08/18/vue初体验-二/" title="vue初体验(二)" itemprop="url">vue初体验(二)</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="小韦德" target="_blank" itemprop="author">小韦德</a>
 		
   <p class="article-time">
-    <time datetime="2017-08-09T08:39:43.000Z" itemprop="datePublished"> Published 2017-08-09</time>
+    <time datetime="2017-08-18T07:14:19.000Z" itemprop="datePublished"> Published 2017-08-18</time>
     
   </p>
 </header>
@@ -106,19 +124,22 @@
 		
 		</div>
 		
-		<p>##box-sizing</p>
+		<p>##vue-router</p>
 <hr>
-<pre><code>由于各种浏览器有各自的盒模型，有自己的标准，所以如果设置margin,padding他们所加在的位置也会不同，这样看到的宽高可能就会不一样了。这样我们有box-sizing这个属性可以设置，它有两个值content-box和border-box，如果box-sizing: content-box，那么元素设置宽高后，加padding,margin，还是会按照浏览器标准的不同而解析；设置box-sizing: border-box 元素宽高在各种浏览器则会一致，不会因padding,border而改变。
-一些专家甚至建议所有的WEB开发者：将所有的元素的box-sizing都设为border-box 
+<pre><code>通过修改我们搭建的脚手架下的router&gt;index.js，实现配置路由。
+1.首先我们需要import vue跟vue-router，引入我们所需路由的模块，然后在router里面配置，子路由的话则配置一个children即可，如下
 </code></pre><hr>
-<p>##flex</p>
+<p><img src="/img/router.png" width="200"></p>
 <hr>
-<pre><code>如果不知道元素高度，那么垂直居中就不容易实现，所以我们可以display: flex，然后设置align-items: center就可以了，其他几个属性：
-flex-direction: row|row-reverse|column|column-reverse 设置元素的排列顺序
-flex-wrap: nowrap|wrap|wrap-reverse  设置一行排不下如何换行
-justify-content: flex-start|flex-end|center|space-between|space-around  x轴的对齐方式
-align-items: flex-start|flex-end|center|baseline|stretch  y轴的对齐方式
+<pre><code>2.实现一个tab切换，创建一个tab模块，可以使用&lt;router-link&gt;标签，它默认为一个a标签，里面有一个to属性，通过to可以跳转到对应的tab页
 </code></pre><hr>
+<hr>
+<pre><code>3.在App.vue里面引入并使用这个tab模块，我们就可以实现简单的页面跳转了。
+</code></pre><hr>
+<hr>
+<pre><code>4.上面导入的路由如果项目完成之后，是实现不了按需加载的，所以我们可以在router&gt;index里做一下更改，如下
+</code></pre><hr>
+<p><img src="/img/mine.png" width="300"></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -131,7 +152,7 @@ align-items: flex-start|flex-end|center|baseline|stretch  y轴的对齐方式
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="https://wade555.github.io/2017/08/09/几个css样式/" data-title="几个css样式 | 前端小知识" data-tsina="null" class="share clearfix">
+	  <div data-url="https://wade555.github.io/2017/08/18/vue初体验-二/" data-title="vue初体验(二) | 前端小知识" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -144,19 +165,11 @@ align-items: flex-start|flex-end|center|baseline|stretch  y轴的对齐方式
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/08/18/vue初体验-二/" title="vue初体验(二)">
-  <strong>上一篇：</strong><br/>
-  <span>
-  vue初体验(二)</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2017/08/02/vue初体验-一/"  title="vue初体验(一)">
+<a href="/2017/08/09/几个css样式/"  title="几个css样式">
  <strong>下一篇：</strong><br/> 
- <span>vue初体验(一)
+ <span>几个css样式
 </span>
 </a>
 </div>
